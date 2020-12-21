@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sensei</title>
+	<!-- core:css -->
+	<link rel="stylesheet" href="./assets/vendors/core/core.css">
+	<!-- endinject -->
+	<!-- plugin css for this page -->
+	<!-- end plugin css for this page -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="./assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="./assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="./assets/css/demo_1/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" />
+</head>
+<body class="sidebar-dark">
+	<div class="main-wrapper">
+
+		<!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="sidebar-brand">
+          Sensei<span style="padding-left: 5px;">Admin</span>
+        </a>
+                <div class="sidebar-toggler not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                    <li class="nav-item nav-category">Main</li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">
+                            <i class="link-icon" data-feather="box"></i>
+                            <span class="link-title">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-category">Menu</li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./article.html" class="nav-link">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./question.html" class="nav-link">Questions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+   
+		<!-- partial -->
+	
+		<div class="page-wrapper">
+				
+			<!-- partial:../../partials/_navbar.html -->
+			<nav class="navbar">
+				<a href="#" class="sidebar-toggler">
+					<i data-feather="menu"></i>
+				</a>
+                <div class="navbar-content">
+                    <form class="search-form">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i data-feather="search"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown nav-notifications">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="bell"></i>
+                                <div class="indicator">
+                                    <div class="circle"></div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+                                <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                    <p class="mb-0 font-weight-medium">6 New Notifications</p>
+                                    <a href="javascript:;" class="text-muted">Clear all</a>
+                                </div>
+                                <div class="dropdown-body">
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="user-plus"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New customer registered</p>
+                                            <p class="sub-text text-muted">2 sec ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="gift"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>New Order Recieved</p>
+                                            <p class="sub-text text-muted">30 min ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Server Limit Reached!</p>
+                                            <p class="sub-text text-muted">1 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="layers"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Apps are ready for update</p>
+                                            <p class="sub-text text-muted">5 hrs ago</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="dropdown-item">
+                                        <div class="icon">
+                                            <i data-feather="download"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p>Download completed</p>
+                                            <p class="sub-text text-muted">6 hrs ago</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-footer d-flex align-items-center justify-content-center">
+                                    <a href="javascript:;">View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-profile">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./assets/images/faces/face1.jpg" alt="profile">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                                <div class="dropdown-header d-flex flex-column align-items-center">
+                                    <div class="figure mb-3">
+                                        <img src="./assets/images/faces/face1.jpg" alt="">
+                                    </div>
+                                    <div class="info text-center">
+                                        <p class="name font-weight-bold mb-0">Amiah Burton</p>
+                                        <p class="email text-muted mb-3">amiahburton@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-body">
+                                    <ul class="profile-nav p-0 pt-3">
+                                        <li class="nav-item">
+                                            <a href="./general/profile.html" class="nav-link">
+                                                <i data-feather="user"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="edit"></i>
+                                                <span>Edit Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="repeat"></i>
+                                                <span>Switch User</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i data-feather="log-out"></i>
+                                                <span>Log Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+			</nav>
+			<!-- partial -->
+
+	        <div class="page-content">
+
+            <div class="profile-page tx-13">
+					<div class="row profile-body">
+						<!-- left wrapper start -->
+
+						<!-- left wrapper end -->
+						<!-- middle wrapper start -->
+						<div class="col-md-8 col-xl-8 m-auto">
+							<div class="row">
+								<div class="grid-margin">
+									<div class="card rounded">
+										<div class="card-body">
+                                            <h3 class="pb-2">Lorem ipsum dolor sit amet</h3>
+											<!-- <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p> -->
+											<img class="img-fluid" style="width: 120%;" src="./assets/images/sample1.jpg" alt="">
+										</div>
+										<div class="card-footer">
+											<div class="d-flex post-actions">
+												<p style="font-size: 1em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?
+                                                    Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?
+                                                    Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?
+                                                    Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?
+                                                    <br />
+                                                    Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?Dolores odio beatae quibusdam possimus culpa, ea perferendis minus facilis dignissimos adipisci hic. 
+                                                    Ipsum cum nesciunt optio rem labore at quis perferendis?
+                                                </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </div>
+                        <div class="col-md-6 col-xl-5 mb-2" style="margin-left: 16%;">
+                            <h4>Comments Below</h4>
+                        </div>
+                        <!-- middle wrapper end -->
+                        
+					<div class="col-md-6 col-xl-5" style="margin-left: 16%;">
+
+                            <div class="row">
+                                <div class="col-md-12 grid-margin">
+                                    <div class="card rounded">
+                                        <div class="card-header">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-xs rounded-circle" src="./assets/images/faces/face1.jpg" alt="">													
+                                                    <div class="ml-2">
+                                                        <p>Mike Popescu</p>
+                                                        <p class="tx-11 text-muted">1 min ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-lg pb-3px" data-feather="more-horizontal"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="meh" class="icon-sm mr-2"></i> <span class="">Unfollow</span></a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="corner-right-up" class="icon-sm mr-2"></i> <span class="">Go to post</span></a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="share-2" class="icon-sm mr-2"></i> <span class="">Share</span></a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="copy" class="icon-sm mr-2"></i> <span class="">Copy link</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
+                                            <!-- <img class="img-fluid" src="../../../assets/images/sample1.jpg" alt=""> -->
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex post-actions">
+                                                <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                                    <i class="icon-md" data-feather="heart"></i>
+                                                    <p class="d-none d-md-block ml-2">7 Like</p>
+                                                </a>
+                                                <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                                    <i class="icon-md" data-feather="message-square"></i>
+                                                    <p class="ml-2">Replies</p>
+                                                </a> 
+                                            </div>
+                                            <div style="background-color: #e3e3e3;" class="card mt-3 ml-5">
+                                                <div class="card-header">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <img class="img-xs rounded-circle" src="./assets/images/faces/face1.jpg" alt="">													
+                                                            <div class="ml-2">
+                                                                <p>Mike Popescu</p>
+                                                                <p class="tx-11 text-muted">1 min ago</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
+                                                    <!-- <img class="img-fluid" src="../../../assets/images/sample1.jpg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ggg -->
+                                    <div class="card rounded">
+                                        <div class="card-header">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-xs rounded-circle" src="./assets/images/faces/face1.jpg" alt="">													
+                                                    <div class="ml-2">
+                                                        <p>Mike Popescu</p>
+                                                        <p class="tx-11 text-muted">1 min ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <button class="btn p-0" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="icon-lg pb-3px" data-feather="more-horizontal"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="meh" class="icon-sm mr-2"></i> <span class="">Unfollow</span></a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="corner-right-up" class="icon-sm mr-2"></i> <span class="">Go to post</span></a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="share-2" class="icon-sm mr-2"></i> <span class="">Share</span></a>
+                                                        <a class="dropdown-item d-flex align-items-center" href="#"><i data-feather="copy" class="icon-sm mr-2"></i> <span class="">Copy link</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
+                                            <!-- <img class="img-fluid" src="../../../assets/images/sample1.jpg" alt=""> -->
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex post-actions">
+                                                <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                                    <i class="icon-md" data-feather="heart"></i>
+                                                    <p class="d-none d-md-block ml-2">Like</p>
+                                                </a>
+                                                <a href="javascript:;" class="d-flex align-items-center text-muted mr-4">
+                                                    <i class="icon-md" data-feather="message-square"></i>
+                                                    <p class="d-none d-md-block ml-2">Reply</p>
+                                                </a>
+                                            </div>
+                                            
+                                            <div style="background-color: #e3e3e3;" class="card mt-3 ml-5">
+                                                <div class="card-header">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <img class="img-xs rounded-circle" src="./assets/images/faces/face1.jpg" alt="">													
+                                                            <div class="ml-2">
+                                                                <p>Mike Popescu</p>
+                                                                <p class="tx-11 text-muted">1 min ago</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
+                                                    <!-- <img class="img-fluid" src="../../../assets/images/sample1.jpg" alt=""> -->
+                                                </div>
+                                            </div>
+                                            
+                                            <div style="background-color: #e3e3e3;" class="card mt-3 ml-5">
+                                                <div class="card-header">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <img class="img-xs rounded-circle" src="./assets/images/faces/face1.jpg" alt="">													
+                                                            <div class="ml-2">
+                                                                <p>Mike Popescu</p>
+                                                                <p class="tx-11 text-muted">1 min ago</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="mb-3 tx-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minima delectus nemo unde quae recusandae assumenda.</p>
+                                                    <!-- <img class="img-fluid" src="../../../assets/images/sample1.jpg" alt=""> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- hhh -->
+                            
+                    </div>
+                </div>
+                        
+						<!-- right wrapper start -->
+						
+						<!-- right wrapper end -->
+			</div>
+            </div>
+
+            </div>
+            
+            <!-- Comments -->
+
+                
+
+            <!-- Comments -->
+
+			<!-- partial:../../partials/_footer.html -->
+			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between">
+				<p class="text-muted text-center text-md-left">Copyright © 2020 <a href="https://www.nobleui.com/" target="_blank">Sensei</a>. All rights reserved</p>
+				<p class="text-muted text-center text-md-left mb-0 d-none d-md-block">Handcrafted With <i class="mb-1 text-primary ml-1 icon-small" data-feather="heart"></i></p>
+			</footer>
+			<!-- partial -->
+	
+		</div>
+	</div>
+
+	<!-- core:js -->
+	<script src="./assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+	<!-- plugin js for this page -->
+	<!-- end plugin js for this page -->
+	<!-- inject:js -->
+	<script src="./assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="./assets/js/template.js"></script>
+	<!-- endinject -->
+	<!-- custom js for this page -->
+	<!-- end custom js for this page -->
+</body>
+
+</html>
